@@ -10,16 +10,22 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="CSS/index.css" rel="stylesheet">
+  <script src="JS/landing.js" async></script>
 
   <style>
     .content{
-      background-image: url("img/banner.jpg");
-      
+      background-image: url("img/banner.jpg");      
       background-size: cover;
     }
-    .content .header .h1-intro{
+    .content .header-content{
       background-image: url("img/pic04.jpg");
-      opacity: .5;
+      opacity: .6;
+      background-size: cover;
+    }
+
+    .content .middle-content{
+      background-image: url("img/pic04.jpg");
+      opacity: .6;
       background-size: cover;
     }
   </style>
@@ -33,26 +39,27 @@
     <section class="content">
       <header class="header">
         <button><a href="#">Admin Login</a></button>
-        <div class="h1-intro">          
-          <h1>Refugee Stories</h1>         
-          <p>A home for displaced communities to connect, garner support...but most of all,    tell their stories of hardship and triumph.</p>
-        </div>
         <nav class="links">
           <a href="#">More Stories</a>
           <a href="/about.html">About Us</a>          
-        </nav>
-        
-      </header>    
+        </nav>        
+      </header>  
+      <div class="header-content">                   
+        <h1>Refugee Stories</h1>         
+        <p>A home for displaced communities to connect, garner support...but most of all,    tell their stories of hardship and triumph.</p>
+      </div>  
       <section class="middle-content">
         <div class="carousel">
+          <div class="left-button"></div>
           <img class="carousel-img" src="img/annie-spratt-427339-unsplash.jpg" data-img="1">
           <img class="carousel-img" src="img/avel-chuklanov-686841-unsplash.jpg" data-img="2">
           <img class="carousel-img" src="img/jaimin-desai-90301-unsplash.jpg" data-img="3">
+          <div class="right-button"></div>
         </div>
         <div class="story-quote">
-          <p class="quote" data-img="1">Carousel story quote</p>
-          <p class="quote" data-img="2">Carousel story quote</p>
-          <p class="quote" data-img="3">Carousel story quote</p>
+          <p class="quote" data-img="1">"Carousel story quote"</p>
+          <p class="quote" data-img="2">"Carousel story quote"</p>
+          <p class="quote" data-img="3">"Carousel story quote"</p>
         </div>
         <div class="user-input">
           <form action="#" id="input-form">
