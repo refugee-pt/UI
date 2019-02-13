@@ -11,6 +11,19 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="CSS/index.css" rel="stylesheet">
 
+  <style>
+    .content{
+      background-image: url("img/banner.jpg");
+      
+      background-size: cover;
+    }
+    .content .header .h1-intro{
+      background-image: url("img/pic04.jpg");
+      opacity: .5;
+      background-size: cover;
+    }
+  </style>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -19,12 +32,16 @@
 <body>
     <section class="content">
       <header class="header">
-        <h1>Refugee Stories</h1>
+        <button><a href="#">Admin Login</a></button>
+        <div class="h1-intro">          
+          <h1>Refugee Stories</h1>         
+          <p>A home for displaced communities to connect, garner support...but most of all,    tell their stories of hardship and triumph.</p>
+        </div>
         <nav class="links">
           <a href="#">More Stories</a>
           <a href="/about.html">About Us</a>          
         </nav>
-        <button>Admin Login</button>
+        
       </header>    
       <section class="middle-content">
         <div class="carousel">
@@ -41,6 +58,7 @@
           <form action="#" id="input-form">
           <label for="story">Tell us your story</label>
           <input type="text" id="story" name="story">
+          <input type="submit" id="submit" name="submit">
           </form>
         </div>
       </section>

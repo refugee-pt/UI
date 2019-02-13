@@ -1,7 +1,67 @@
 .content .middle-content .carousel img{
   display: none;
 }
+body{
+  width: 100%;
+  .content{
+    .header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 3%;
+      .h1-intro{
+        margin-right: -9%;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        h1{
+          border-top: 3px solid white;
+          border-bottom: 3px solid white;          
+          font-weight: 900;
+          color: white;
+          padding-top: 2%;
+          padding-bottom: 2%;
+         //border-style: double;
+        }        
+        p{
+          color: white;
+          padding-top: 3%;
+          width: 90%;
+          font-weight: 900;
+        }
+      }
+      button{
+        width: 8%;
+        height: 3%;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        //font-weight: 900;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        a{
+          text-decoration: none;
+          color: white;
+        }        
+      }
+      button:hover{        
+          background-color: white;
+          opacity: .9;        
+      }
 
-.content{
-  background-image: url("banner.jpg");
+      .links{
+        .format-nav;
+      }
+      
+    }
+  }
+  .middle-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
