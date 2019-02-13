@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lato', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -173,4 +173,10 @@ label {
 }
 address {
   font-size: 1.4rem;
+}
+.content .middle-content .carousel img {
+  display: none;
+}
+.content {
+  background-image: url("banner.jpg");
 }
