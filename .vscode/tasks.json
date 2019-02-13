@@ -6,7 +6,7 @@
         {
             "label": "LESS Compile",
             "type": "shell",
-            "command": "lessc less/index.less css/index.css",
+            "command": "lessc LESS/index.less CSS/index.css",
             "group": "build",
             "problemMatcher": []
         }
