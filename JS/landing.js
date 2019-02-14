@@ -9,7 +9,21 @@ class Carousel{
 
         let allImages = Array.from(this.images);
 
-        allImages[0].style.display = "block"
+        // this.data = allImages[0].dataset.img;
+
+        // this.itemElement = document.querySelector(`.carousel-img[data-img="${this.data}"]`);
+
+        // this.quote = document.querySelector(`.quote[data-img="${this.data}]`).textContent;
+
+        // this.quoteArea = document.querySelector('.quote-area');
+
+        // this.quoteArea.textContent = this.quote;
+
+
+
+        allImages[0].style.display = "block";
+
+
 
         
 
