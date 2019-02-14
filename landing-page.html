@@ -13,19 +13,25 @@
   <script src="JS/landing.js" async></script>
 
   <style>
-    .content{
+    body{
       background-image: url("img/banner.jpg");      
       background-size: cover;
     }
     .content .header-content{
       background-image: url("img/pic04.jpg");
-      opacity: .6;
+      /* background-color: rgba(124, 128, 129, .6); */
       background-size: cover;
     }
 
     .content .middle-content{
       background-image: url("img/pic04.jpg");
-      opacity: .6;
+      /* background-color: rgba(124, 128, 129, .6); */
+      background-size: cover;
+    }
+
+    .content .user-input{
+      background-image: url("img/pic04.jpg");
+      /* background-color: rgba(124, 128, 129, .6); */
       background-size: cover;
     }
   </style>
@@ -41,11 +47,11 @@
         <button><a href="#">Admin Login</a></button>
         <nav class="links">
           <a href="#">More Stories</a>
-          <a href="/about.html">About Us</a>          
+          <a href="#">About Us</a>          
         </nav>        
       </header>  
       <div class="header-content">                   
-        <h1>Refugee Stories</h1>         
+        <span><h1>Refugee Stories</h1></span>         
         <p>A home for displaced communities to connect, garner support...but most of all,    tell their stories of hardship and triumph.</p>
       </div>  
       <section class="middle-content">
@@ -57,27 +63,32 @@
           <div class="right-button"></div>
         </div>
         <span class="quote-area">"Lorem ipsum dolor sit amet consectetur adipisicing."</span>
+        <button>Read More</button>
         <div class="story-quote">
           <p class="quote" data-img="1">"Carousel story quote"</p>
           <p class="quote" data-img="2">"Carousel story quote"</p>
           <p class="quote" data-img="3">"Carousel story quote"</p>
-        </div>
-        <div class="user-input">
-          <form action="#" id="input-form">
-          <label for="story">Tell us your story</label>
-          <input type="text" id="story" name="story">
-          <input type="submit" id="submit" name="submit">
-          </form>
-        </div>
+        </div>       
       </section>
+      <div class="user-input">
+        <h3>Do you have a story?</h3>
+        <button>Share</button>       
+        <textarea name="story" id="story" cols="50" rows="20" wrap="hard" maxlength="2000" form="input-form"></textarea>
+        <form action="#" id="input-form" method="POST">
+            <!-- <input type="text" id="story" name="story" size="100"> -->
+          <input type="submit" id="submit" name="submit">
+        </form>
+      </div>
   </section>
-    <section>
-      <footer class="footer">
-        <h4>Contact Us</h4>
+  <section>
+    <footer class="footer">
+      <h4>Contact</h4>
+      <div>
         <address>1234 Refugee Camp, All Over, The World</address>
-        <address>Email: <a href="mailto:ourorgemail.com"></a>Refuge Stories</address>
+        <address>rfgstories@rfg.com</address>
         <p>1.800.REF.UGEE</p>
-      </footer>
-    </section>
+      </div>
+    </footer>
+  </section>
 </body>
 </html>
