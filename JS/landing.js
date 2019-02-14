@@ -9,6 +9,22 @@ class Carousel{
 
         let allImages = Array.from(this.images);
 
+        allImages[0].style.display = "block"
+
+        
+
+        // this.leftb.addEventListener('click', () => 
+
+        // )
+
+        // this.rightb.addEventListener('click', () => );
+
+
+
+    }
+    cycle(){
+
+
 
     }
 }
