@@ -12,18 +12,10 @@ body{
       display: flex;
       justify-content: space-between;
       padding: 3%;
-      padding-bottom: 8%;
-      button{
-        .style-button;
-        a{
-          text-decoration: none;
-          color: @text;          
-        }               
-      }
-      button:hover{        
-        background-color: @text;        
+      padding-bottom: 8%;     
     }
       .links{
+        margin: 0 auto;
         .format-nav;
       }    
     }
@@ -84,8 +76,11 @@ body{
           border-right: 25px solid @text;
           border-bottom: 12px solid transparent;
           float: left;
-          align-self: center;
-                  
+          align-self: center;                  
+        }
+        .left-button:hover{
+          border-right: 25px solid white;
+          opacity: 1;
         }
         .right-button{
           width: 0;
@@ -94,8 +89,11 @@ body{
           border-left: 25px solid @text;
           border-bottom: 12px solid transparent;
           float: right;
-          align-self: center;
-          
+          align-self: center;          
+        }
+        .right-button:hover{
+          border-left: 25px solid white;
+          opacity: 1;
         }
         .carousel-img{
           display: none;
@@ -147,7 +145,7 @@ body{
         color: @text;
         width: 95%; 
         margin-bottom: 3%; 
-        display: none;
+        display: block;
       }
       #submit{
         background-color: transparent;
@@ -156,11 +154,14 @@ body{
         padding-top: 5%;  
         padding-bottom: 5%;
         width: 7em;
-        display: none;
+        display: block;
       }
       #submit:hover{        
-        background-color: @text;        
-    }          
+        background-color: @text; 
+      } 
+      .story--open{
+        display: block;
+      }
   }
 } 
 .footer{
@@ -189,5 +190,5 @@ body{
   
 }
 
-}
+
 

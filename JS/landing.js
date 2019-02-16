@@ -49,5 +49,43 @@ class Quote{
     }
 }
 
+class Story{
+    constructor(story){
+        this.story = story;
+
+        this.button = document.getElementById('share');
+
+        this.textArea = document.getElementById('story');
+
+        this.submit = document.getElementById('submit');
+
+        // this.button.addEventListener('click',function(event){
+        //     this.story[0].classList.toggle('story--open')
+        // });       
+    }   
+    
+}
+
+
+
 
 let carousel = document.querySelectorAll('.carousel').forEach(item => new Carousel(item));
+
+let story = document.querySelectorAll('.user-input').forEach(item => new Story(item));
+
+// const mkOption = select => option => {
+//     const optEl = document.createElement("option")
+//     optEl.innerText = option
+//     optEl.value = option
+  
+//     select.appendChild(optEl)
+//   }
+
+// const country = document.getElementById("country")
+
+//   const countries = "./country.json"
+//   fetch(countries)
+//     .then(res => res.json())
+//     .then(Object.values)
+    
+//     .then(countries => countries.forEach(mkOption(country)))
