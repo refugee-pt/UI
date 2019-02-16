@@ -435,7 +435,8 @@ body .container .profiles {
 }
 body .container .profiles .PM {
   padding-top: 3%;
-  border: 2px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
 }
 body .container .profiles .PM .profile img {
   border: 1px solid transparent;
@@ -451,11 +452,17 @@ body .container .profiles .PM .profile p {
 body .container .profiles .PM .profile img {
   float: right;
 }
+body .container .profiles .PM .profile h3 {
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
 body .container .profiles .UI {
   padding-top: 3%;
-  background-image: url("/img/banner.jpg");
-  background-size: cover;
-  border: 2px solid black;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
 }
 body .container .profiles .UI .profile img {
   border: 1px solid transparent;
@@ -472,9 +479,17 @@ body .container .profiles .UI .profile p {
 body .container .profiles .UI .profile img {
   float: left;
 }
+body .container .profiles .UI .profile h3 {
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
 body .container .profiles .FE {
   padding-top: 3%;
-  border: 2px solid black;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
 }
 body .container .profiles .FE .profile img {
   border: 1px solid transparent;
@@ -490,9 +505,17 @@ body .container .profiles .FE .profile p {
 body .container .profiles .FE .profile img {
   float: right;
 }
+body .container .profiles .FE .profile h3 {
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
 body .container .profiles .BE {
   padding-top: 3%;
-  border: 2px solid black;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
 }
 body .container .profiles .BE .profile img {
   border: 1px solid transparent;
@@ -511,4 +534,17 @@ body .container .profiles .BE .profile p {
 }
 body .container .profiles .BE .profile img {
   float: left;
+}
+body .container .profiles .BE .profile h3 {
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+body .footer h4 {
+  color: black;
+}
+body .footer div {
+  color: black;
 }
