@@ -22,30 +22,10 @@
 }
 .format-img img {
   border: 1px solid transparent;
-  display: block;
   max-width: 230px;
   max-height: 200px;
   width: 30%;
   height: 25%;
-}
-.format-profile .profile {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-}
-.format-profile .profile img {
-  border: 1px solid transparent;
-  display: block;
-  max-width: 230px;
-  max-height: 200px;
-  width: 30%;
-  height: 25%;
-}
-.format-profile .profile p {
-  border: 1px solid transparent;
-  width: 30%;
-  height: 25%;
-  position: fixed;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -423,114 +403,112 @@ body .user-input .story--open {
   justify-content: space-evenly;
   align-items: center;
 }
-body .container .profiles .PM {
-  border: 5px dashed red;
+body .top-content .header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(124, 128, 129, 0.6);
 }
-body .container .profiles .PM img {
-  border: 1px solid transparent;
-  display: block;
-  max-width: 230px;
-  max-height: 200px;
-  width: 30%;
-  height: 25%;
+body .top-content .header h1 {
+  padding-top: 3%;
+  color: rgba(255, 255, 255, 0.6);
 }
-body .container .profiles .PM .profile {
-  border: 1px solid black;
+body .top-content .header nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .top-content .header nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: .6;
+  font-weight: 800;
+}
+body .top-content .header nav a:hover {
+  text-decoration: underline;
+}
+body .container .profiles {
   display: flex;
   flex-direction: column;
 }
+body .container .profiles .PM {
+  padding-top: 3%;
+  border: 2px solid black;
+}
 body .container .profiles .PM .profile img {
   border: 1px solid transparent;
-  display: block;
   max-width: 230px;
   max-height: 200px;
   width: 30%;
   height: 25%;
 }
 body .container .profiles .PM .profile p {
-  border: 1px solid transparent;
-  width: 30%;
-  height: 25%;
-  position: fixed;
-}
-body .container .profiles .UI img {
-  border: 1px solid transparent;
-  display: block;
-  max-width: 230px;
-  max-height: 200px;
-  width: 30%;
+  width: 50%;
   height: 25%;
 }
-body .container .profiles .UI .profile {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+body .container .profiles .PM .profile img {
+  float: right;
+}
+body .container .profiles .UI {
+  padding-top: 3%;
+  background-image: url("/img/banner.jpg");
+  background-size: cover;
+  border: 2px solid black;
 }
 body .container .profiles .UI .profile img {
   border: 1px solid transparent;
-  display: block;
   max-width: 230px;
   max-height: 200px;
   width: 30%;
   height: 25%;
 }
 body .container .profiles .UI .profile p {
-  border: 1px solid transparent;
-  width: 30%;
+  width: 50%;
   height: 25%;
-  position: fixed;
+  float: right;
 }
-body .container .profiles .FE img {
-  border: 1px solid transparent;
-  display: block;
-  max-width: 230px;
-  max-height: 200px;
-  width: 30%;
-  height: 25%;
+body .container .profiles .UI .profile img {
+  float: left;
 }
-body .container .profiles .FE .profile {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+body .container .profiles .FE {
+  padding-top: 3%;
+  border: 2px solid black;
 }
 body .container .profiles .FE .profile img {
   border: 1px solid transparent;
-  display: block;
   max-width: 230px;
   max-height: 200px;
   width: 30%;
   height: 25%;
 }
 body .container .profiles .FE .profile p {
-  border: 1px solid transparent;
-  width: 30%;
-  height: 25%;
-  position: fixed;
-}
-body .container .profiles .BE img {
-  border: 1px solid transparent;
-  display: block;
-  max-width: 230px;
-  max-height: 200px;
-  width: 30%;
+  width: 50%;
   height: 25%;
 }
-body .container .profiles .BE .profile {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+body .container .profiles .FE .profile img {
+  float: right;
+}
+body .container .profiles .BE {
+  padding-top: 3%;
+  border: 2px solid black;
 }
 body .container .profiles .BE .profile img {
   border: 1px solid transparent;
-  display: block;
   max-width: 230px;
   max-height: 200px;
   width: 30%;
   height: 25%;
 }
 body .container .profiles .BE .profile p {
-  border: 1px solid transparent;
-  width: 30%;
+  width: 50%;
   height: 25%;
-  position: fixed;
+  float: right;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+body .container .profiles .BE .profile img {
+  float: left;
 }

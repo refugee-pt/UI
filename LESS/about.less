@@ -1,30 +1,112 @@
 body{
+
     .top-content{
         .header{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            background-color: @palletfg;
+            h1{                
+                padding-top: 3%;
+                color: @text;
+            }
+            nav{
+                .format-nav;
+            }
 
         }
     }
     .container{
         .profiles{
+            display: flex;
+            flex-direction: column;
             .PM{
+                padding-top: 3%;
                 
-                //margin-left: 50%;
-                border: 5px dashed red;
-                .format-img;
-                .format-profile;
-                //float: right;
+                border: 2px solid black;
+                .profile{
+                    .format-img;
+                    
+                    p{ 
+                    width: 50%;
+                    height: 25%;
+                    
+                    }
+                    img{
+                        float: right;
+                    }
+                    // img:hover{
+                       
+                    // }                  
+                }
             }
             .UI{
-                .format-img;                
-                .format-profile;
+                padding-top: 3%;
+                background-image: url("/img/banner.jpg");
+                 background-size: cover;
+                
+                border: 2px solid black;
+                .profile{
+                    .format-img;
+                    
+                    p{ 
+                    width: 50%;
+                    height: 25%;
+                    float: right;
+                    
+                    }
+                    img{
+                        float: left;
+                    }
+                    // img:hover{
+                       
+                    // }                  
+                }
             }
             .FE{
-                .format-img;
-                .format-profile;
+                padding-top: 3%;
+                
+                border: 2px solid black;
+                .profile{
+                    .format-img;
+                    
+                    p{ 
+                    width: 50%;
+                    height: 25%;
+                    
+                    }
+                    img{
+                        float: right;
+                    }
+                    // img:hover{
+                       
+                    // }                  
+                }
             }
             .BE{
-                .format-img;
-                .format-profile
+                padding-top: 3%;
+                
+                border: 2px solid black;
+                .profile{
+                    .format-img;
+                    
+                    p{ 
+                    width: 50%;
+                    height: 25%;
+                    float: right;
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    
+                    }
+                    img{
+                        float: left;
+                    }
+                    // img:hover{
+                       
+                    // }                  
+                }
             }            
         }
     }
@@ -32,3 +114,10 @@ body{
 
     }
 }
+
+
+// @media @desktop{
+//     body{
+//         max-width: 100%;
+//     }
+// }
