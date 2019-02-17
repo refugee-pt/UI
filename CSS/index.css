@@ -20,6 +20,13 @@
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 2%;
 }
+.format-img img {
+  border: 1px solid transparent;
+  max-width: 230px;
+  max-height: 200px;
+  width: 30%;
+  height: 25%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -193,9 +200,7 @@ img {
   width: inherit;
 }
 .container {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;
 }
 span {
   font-size: 1.6rem;
@@ -223,36 +228,23 @@ body .content .header {
   padding: 3%;
   padding-bottom: 8%;
 }
-body .content .header button {
-  padding: 1%;
-  width: 20%;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 2%;
-}
-body .content .header button a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-}
-body .content .header button:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-body .content .header .links {
+body .content .links {
+  margin: 0 auto;
   width: 45%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-body .content .header .links a {
+body .content .links a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: .6;
   font-weight: 800;
 }
-body .content .header .links a:hover {
+body .content .links a:hover {
   text-decoration: underline;
 }
-body .content .header-content {
+body .header-content {
   margin-top: 8%;
   display: flex;
   flex-direction: column;
@@ -262,24 +254,24 @@ body .content .header-content {
   padding: 3%;
   margin: 0 auto;
 }
-body .content .header-content span {
+body .header-content span {
   border-top: 3px solid rgba(255, 255, 255, 0.6);
   border-bottom: 3px solid rgba(255, 255, 255, 0.6);
   padding: 2%;
 }
-body .content .header-content span h1 {
+body .header-content span h1 {
   border-top: 3px solid rgba(255, 255, 255, 0.6);
   border-bottom: 3px solid rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.6);
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-body .content .header-content p {
+body .header-content p {
   color: rgba(255, 255, 255, 0.6);
   padding-top: 3%;
   width: 90%;
 }
-body .content .middle-content {
+body .middle-content {
   margin: 0 auto;
   margin-top: 10%;
   display: flex;
@@ -289,14 +281,14 @@ body .content .middle-content {
   width: 95%;
   padding-bottom: 3%;
 }
-body .content .middle-content .carousel {
+body .middle-content .carousel {
   padding: 1%;
   margin-top: 3%;
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
-body .content .middle-content .carousel .left-button {
+body .middle-content .carousel .left-button {
   width: 0;
   height: 0;
   border-top: 12px solid transparent;
@@ -305,7 +297,11 @@ body .content .middle-content .carousel .left-button {
   float: left;
   align-self: center;
 }
-body .content .middle-content .carousel .right-button {
+body .middle-content .carousel .left-button:hover {
+  border-right: 25px solid white;
+  opacity: 1;
+}
+body .middle-content .carousel .right-button {
   width: 0;
   height: 0;
   border-top: 12px solid transparent;
@@ -314,30 +310,34 @@ body .content .middle-content .carousel .right-button {
   float: right;
   align-self: center;
 }
-body .content .middle-content .carousel .carousel-img {
+body .middle-content .carousel .right-button:hover {
+  border-left: 25px solid white;
+  opacity: 1;
+}
+body .middle-content .carousel .carousel-img {
   display: none;
   height: 30%;
   padding-right: 1%;
   padding-left: 1%;
 }
-body .content .middle-content .quote-area {
+body .middle-content .quote-area {
   padding: 2%;
   color: rgba(255, 255, 255, 0.6);
 }
-body .content .middle-content button {
+body .middle-content button {
   padding: 1%;
   width: 20%;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 2%;
 }
-body .content .middle-content button:hover {
+body .middle-content button:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-body .content .middle-content .story-quote .quote {
+body .middle-content .story-quote .quote {
   display: none;
 }
-body .content .user-input {
+body .user-input {
   padding-top: 3.5%;
   padding-bottom: 2%;
   display: flex;
@@ -347,56 +347,204 @@ body .content .user-input {
   margin-top: 5%;
   width: 95%;
 }
-body .content .user-input h3 {
+body .user-input h3 {
   color: rgba(255, 255, 255, 0.6);
   padding-bottom: 2%;
   width: 100%;
   text-align: center;
 }
-body .content .user-input button {
+body .user-input button {
   padding: 1%;
   width: 20%;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 2%;
 }
-body .content .user-input button:hover {
+body .user-input button:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-body .content .user-input #story {
+body .user-input #story {
   background-color: transparent;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.6);
   width: 95%;
   margin-bottom: 3%;
-  display: none;
+  display: block;
 }
-body .content .user-input #submit {
+body .user-input #submit {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   font-family: 'Lato', sans-serif;
   padding-top: 5%;
   padding-bottom: 5%;
   width: 7em;
-  display: none;
+  display: block;
 }
-body .content .user-input #submit:hover {
+body .user-input #submit:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-body .footer {
+body .user-input .story--open {
+  display: block;
+}
+.footer {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid transparent;
   margin-top: 3%;
   line-height: 1.3;
 }
-body .footer h4 {
+.footer h4 {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
-body .footer div {
+.footer div {
   color: rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+body .top-content .header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(124, 128, 129, 0.6);
+}
+body .top-content .header h1 {
+  padding-top: 3%;
+  color: rgba(255, 255, 255, 0.6);
+}
+body .top-content .header nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .top-content .header nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: .6;
+  font-weight: 800;
+}
+body .top-content .header nav a:hover {
+  text-decoration: underline;
+}
+body .container .profiles {
+  display: flex;
+  flex-direction: column;
+}
+body .container .profiles .PM {
+  padding-top: 3%;
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
+}
+body .container .profiles .PM .profile img {
+  border: 1px solid transparent;
+  max-width: 230px;
+  max-height: 200px;
+  width: 30%;
+  height: 25%;
+}
+body .container .profiles .PM .profile p {
+  width: 50%;
+  height: 25%;
+}
+body .container .profiles .PM .profile img {
+  float: right;
+}
+body .container .profiles .PM .profile h3 {
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+body .container .profiles .UI {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+}
+body .container .profiles .UI .profile img {
+  border: 1px solid transparent;
+  max-width: 230px;
+  max-height: 200px;
+  width: 30%;
+  height: 25%;
+}
+body .container .profiles .UI .profile p {
+  width: 50%;
+  height: 25%;
+  float: right;
+}
+body .container .profiles .UI .profile img {
+  float: left;
+}
+body .container .profiles .UI .profile h3 {
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+body .container .profiles .FE {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+}
+body .container .profiles .FE .profile img {
+  border: 1px solid transparent;
+  max-width: 230px;
+  max-height: 200px;
+  width: 30%;
+  height: 25%;
+}
+body .container .profiles .FE .profile p {
+  width: 50%;
+  height: 25%;
+}
+body .container .profiles .FE .profile img {
+  float: right;
+}
+body .container .profiles .FE .profile h3 {
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+body .container .profiles .BE {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+}
+body .container .profiles .BE .profile img {
+  border: 1px solid transparent;
+  max-width: 230px;
+  max-height: 200px;
+  width: 30%;
+  height: 25%;
+}
+body .container .profiles .BE .profile p {
+  width: 50%;
+  height: 25%;
+  float: right;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+body .container .profiles .BE .profile img {
+  float: left;
+}
+body .container .profiles .BE .profile h3 {
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+body .footer h4 {
+  color: black;
+}
+body .footer div {
+  color: black;
 }
