@@ -1,91 +1,76 @@
 class Carousel{
     constructor(item){
+       
         this.item = item;
 
-        this.leftb = item.querySelector(".left-button");
-        this.rightb = item.querySelector(".right-button")
+        this.data = this.item.dataset.img;
 
-        this.images = item.querySelectorAll("img");
+        this.item.classList.add('active');
 
-        let allImages = Array.from(this.images);
+        this.quote = document.querySelector(`.story-quote .quote[data-img="${this.data}"`).textContent
+        this.quoteArea = document.querySelector('.quote-area');
 
-        // this.data = allImages[0].dataset.img;
-
-        // this.itemElement = document.querySelector(`.carousel-img[data-img="${this.data}"]`);
-
-        // this.quote = document.querySelector(`.quote[data-img="${this.data}]`).textContent;
-
-        // this.quoteArea = document.querySelector('.quote-area');
-
-        // this.quoteArea.textContent = this.quote;
-
-
-
-        allImages[0].style.display = "block";
-
-
-
-        
-
-        // this.leftb.addEventListener('click', () => 
-
-        // )
-
-        // this.rightb.addEventListener('click', () => );
-
-
-
-    }
-    cycle(){
-
-
-
-    }
+        let image = document.querySelectorAll('.carousel-img');
+        image.forEach(image => image.style.display = "none");
+        this.item.style.display = "block";
+        this.quoteArea.textContent = this.quote;
+    } 
 }
 
-class Quote{
-    constructor(quote){
-        this.quote = quote;
-    }
-}
+let leftb = document.querySelector('.left-button');
+let rightb = document.querySelector('.right-button');
+let carousel = document.querySelectorAll('.carousel .carousel-img');
+let carouselArray = Array.from(carousel);
+console.log(carouselArray);
 
-class Story{
-    constructor(story){
-        this.story = story;
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
 
-        this.button = document.getElementById('share');
+let currentDisplay = new Carousel(carouselArray[getRandomInt(carouselArray.length)]);
 
-        this.textArea = document.getElementById('story');
-
-        this.submit = document.getElementById('submit');
-
-        // this.button.addEventListener('click',function(event){
-        //     this.story[0].classList.toggle('story--open')
-        // });       
-    }   
+function displayEngine(direction){
     
+    let current = document.querySelector('.active');
+    let index = carouselArray.indexOf(current);
+    let max = carouselArray.length;
+    let min = 0;
+    
+    if(direction === 1){
+        current.classList.remove('active');
+        if(index === max - 1){return 0}
+        return index + 1;
+    }
+    else if(direction === 0){
+        current.classList.remove('active');
+        if(index === min){ return max - 1;}
+        return index - 1;
+    }
+    else{ return currentDisplay;}
 }
 
 
-
-
-let carousel = document.querySelectorAll('.carousel').forEach(item => new Carousel(item));
-
-let story = document.querySelectorAll('.user-input').forEach(item => new Story(item));
-
-// const mkOption = select => option => {
-//     const optEl = document.createElement("option")
-//     optEl.innerText = option
-//     optEl.value = option
-  
-//     select.appendChild(optEl)
-//   }
-
-// const country = document.getElementById("country")
-
-//   const countries = "./country.json"
-//   fetch(countries)
-//     .then(res => res.json())
-//     .then(Object.values)
+function cycleR(){
     
-//     .then(countries => countries.forEach(mkOption(country)))
+    let i = displayEngine(1);    
+    return new Carousel(carousel[i]);
+}
+
+function cycleL(){
+    
+    let i = displayEngine(0);
+    return new Carousel(carousel[i]);
+}
+
+
+leftb.addEventListener('click', (event) => 
+   { cycleL(); }
+)
+
+rightb.addEventListener('click', (event) => 
+    { cycleR();}
+
+)
+
+
+
