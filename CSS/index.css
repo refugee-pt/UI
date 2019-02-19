@@ -432,7 +432,10 @@ body .footer div {
     display: flex;
     justify-content: center;
     align-content: center;
+<<<<<<< HEAD
     padding-bottom: 4%;
+=======
+>>>>>>> 54a14759708f1da77b310eb3c5b38efbfcc4e740
   }
   body .content .header .links {
     width: 45%;
@@ -449,6 +452,7 @@ body .footer div {
   body .content .header .links a:hover {
     text-decoration: underline;
   }
+<<<<<<< HEAD
   body .content .header .links a {
     font-size: 2rem;
   }
@@ -479,6 +483,8 @@ body .footer div {
     width: 15%;
     text-align: center;
   }
+=======
+>>>>>>> 54a14759708f1da77b310eb3c5b38efbfcc4e740
   body .footer {
     background-color: none;
     background-image: url("../img/pic04.jpg");
