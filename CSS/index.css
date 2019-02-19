@@ -329,6 +329,7 @@ body .content .middle-content .carousel .carousel-img {
 body .content .middle-content .quote-area {
   padding: 2%;
   color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
 }
 body .content .middle-content button {
   padding: 1%;

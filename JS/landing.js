@@ -21,7 +21,7 @@ let leftb = document.querySelector('.left-button');
 let rightb = document.querySelector('.right-button');
 let carousel = document.querySelectorAll('.carousel .carousel-img');
 let carouselArray = Array.from(carousel);
-console.log(carouselArray);
+
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
