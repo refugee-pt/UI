@@ -1,5 +1,5 @@
 .format-nav {
-  width: 45%;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -7,25 +7,24 @@
 .format-nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 800;
+  font-weight: 500;
 }
 .format-nav a:hover {
   text-decoration: underline;
 }
 .style-button {
   padding: 1%;
-  width: 20%;
+  width: 30%;
   background-color: transparent;
   color: rgba(3, 3, 3, 0.6);
   margin-bottom: 2%;
   box-shadow: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .format-img img {
-  border: 1px solid transparent;
   max-width: 230px;
   max-height: 200px;
-  width: 30%;
+  width: 20%;
   height: 25%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -177,9 +176,10 @@ h5 {
   font-family: 'Lato', sans-serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: 'Lato', sans-serif;
   letter-spacing: .2rem;
+  text-align: center;
 }
 h2 {
   font-size: 3.2rem;
@@ -197,9 +197,6 @@ p {
   font-size: 1.8rem;
   padding-bottom: 10px;
 }
-img {
-  width: inherit;
-}
 .container {
   width: 100%;
 }
@@ -210,7 +207,7 @@ address {
   font-size: 1.4rem;
 }
 a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 body {
   max-width: 649px;
@@ -246,15 +243,16 @@ body .content .header .header-content {
 body .content .header .links {
   float: right;
   padding-bottom: 3%;
-  width: 45%;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 60%;
 }
 body .content .header .links a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 800;
+  font-weight: 500;
 }
 body .content .header .links a:hover {
   text-decoration: underline;
@@ -287,11 +285,12 @@ body .content .middle-content {
   background-color: white;
 }
 body .content .middle-content .carousel {
-  padding: 1%;
   margin-top: 3%;
-  width: 90%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
 }
 body .content .middle-content .carousel .left-button {
   width: 0;
@@ -331,15 +330,16 @@ body .content .middle-content .quote-area {
   padding: 2%;
   color: rgba(3, 3, 3, 0.6);
   text-align: center;
+  font-size: 1.3rem;
 }
 body .content .middle-content button {
   padding: 1%;
-  width: 20%;
+  width: 30%;
   background-color: transparent;
   color: rgba(3, 3, 3, 0.6);
   margin-bottom: 2%;
   box-shadow: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 body .content .middle-content button:hover {
   background-color: rgba(3, 3, 3, 0.6);
@@ -367,12 +367,12 @@ body .content .user-input h3 {
 }
 body .content .user-input .share {
   padding: 1%;
-  width: 20%;
+  width: 30%;
   background-color: transparent;
   color: rgba(3, 3, 3, 0.6);
   margin-bottom: 2%;
   box-shadow: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 body .content .user-input .share:hover {
   background-color: rgba(3, 3, 3, 0.6);
@@ -420,18 +420,25 @@ body .footer div {
   align-items: center;
   color: rgba(3, 3, 3, 0.6);
 }
+body .footer div p {
+  font-size: 1.3rem;
+}
+body .footer div address a {
+  color: rgba(3, 3, 3, 0.6);
+}
 @media (min-width: 900px) {
   body .content .header .links {
-    width: 45%;
+    width: 55%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: -2%;
+    width: 40%;
   }
   body .content .header .links a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
-    font-weight: 800;
+    font-weight: 500;
   }
   body .content .header .links a:hover {
     text-decoration: underline;
@@ -448,11 +455,30 @@ body .footer div {
   body .content .middle-content {
     margin-top: 5%;
   }
-  body .content .middle-content span {
-    font-size: 2rem;
+  body .content .middle-content .carousel {
+    margin-right: 0;
+  }
+  body .content .middle-content .carousel .left-button {
+    border-top: 17px solid transparent;
+    border-right: 30px solid rgba(3, 3, 3, 0.6);
+    border-bottom: 17px solid transparent;
+  }
+  body .content .middle-content .carousel .right-button {
+    border-top: 17px solid transparent;
+    border-left: 30px solid rgba(3, 3, 3, 0.6);
+    border-bottom: 17px solid transparent;
+  }
+  body .content .middle-content .quote-area {
+    font-size: 1.8rem;
+  }
+  body .content .middle-content button {
+    font-size: 1.6rem;
   }
   body .content .middle-content .carousel-img {
     height: 20%;
+  }
+  body .content .user-input .share {
+    font-size: 1.6rem;
   }
 }
 body .top-content .header {
@@ -460,15 +486,15 @@ body .top-content .header {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/pic04.jpg");
+  background-color: white;
+  color: rgba(3, 3, 3, 0.6);
   background-size: cover;
 }
 body .top-content .header h1 {
   padding-top: 3%;
-  color: rgba(255, 255, 255, 0.9);
 }
 body .top-content .header nav {
-  width: 45%;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -476,33 +502,37 @@ body .top-content .header nav {
 body .top-content .header nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 800;
+  font-weight: 500;
 }
 body .top-content .header nav a:hover {
   text-decoration: underline;
 }
+body .top-content .header nav a {
+  color: rgba(3, 3, 3, 0.6);
+}
 body .container .profiles {
   display: flex;
   flex-direction: column;
+  padding: 0 3%;
 }
 body .container .profiles .PM {
   padding-top: 3%;
-  border-bottom: 1px solid black;
+  border-bottom: 4px solid white;
   padding-bottom: 3%;
 }
 body .container .profiles .PM .profile img {
-  border: 1px solid transparent;
   max-width: 230px;
   max-height: 200px;
-  width: 30%;
+  width: 20%;
   height: 25%;
 }
 body .container .profiles .PM .profile p {
   width: 50%;
   height: 25%;
 }
-body .container .profiles .PM .profile img {
+body .container .profiles .PM .profile #pm {
   float: right;
+  border: 8px solid white;
 }
 body .container .profiles .PM .profile h3 {
   padding-bottom: 2%;
@@ -513,22 +543,21 @@ body .container .profiles .PM .profile h3 {
 }
 body .container .profiles .PM .profile .icons {
   float: left;
-  display: flex;
+  display: block;
   margin-top: 2%;
 }
-body .container .profiles .PM .profile .icons img {
+body .container .profiles .PM .profile .icons .icon {
   width: 12%;
 }
 body .container .profiles .UI {
   padding-top: 3%;
   padding-bottom: 3%;
-  border-bottom: 1px solid black;
+  border-bottom: 4px solid white;
 }
 body .container .profiles .UI .profile img {
-  border: 1px solid transparent;
   max-width: 230px;
   max-height: 200px;
-  width: 30%;
+  width: 20%;
   height: 25%;
 }
 body .container .profiles .UI .profile p {
@@ -536,8 +565,9 @@ body .container .profiles .UI .profile p {
   height: 25%;
   float: right;
 }
-body .container .profiles .UI .profile img {
+body .container .profiles .UI .profile #ui {
   float: left;
+  border: 8px solid white;
 }
 body .container .profiles .UI .profile h3 {
   padding-bottom: 3%;
@@ -548,31 +578,30 @@ body .container .profiles .UI .profile h3 {
 }
 body .container .profiles .UI .profile .icons {
   float: right;
-  display: flex;
-  flex-direction: row-reverse;
+  display: block;
   margin-top: 2%;
 }
-body .container .profiles .UI .profile .icons img {
+body .container .profiles .UI .profile .icons .icon {
   width: 12%;
 }
 body .container .profiles .FE {
   padding-top: 3%;
   padding-bottom: 3%;
-  border-bottom: 1px solid black;
+  border-bottom: 4px solid white;
 }
 body .container .profiles .FE .profile img {
-  border: 1px solid transparent;
   max-width: 230px;
   max-height: 200px;
-  width: 30%;
+  width: 20%;
   height: 25%;
 }
 body .container .profiles .FE .profile p {
   width: 50%;
   height: 25%;
 }
-body .container .profiles .FE .profile img {
+body .container .profiles .FE .profile #fe {
   float: right;
+  border: 8px solid white;
 }
 body .container .profiles .FE .profile h3 {
   padding-bottom: 3%;
@@ -583,22 +612,20 @@ body .container .profiles .FE .profile h3 {
 }
 body .container .profiles .FE .profile .icons {
   float: left;
-  display: flex;
+  display: block;
   margin-top: 2%;
 }
-body .container .profiles .FE .profile .icons img {
+body .container .profiles .FE .profile .icons .icon {
   width: 12%;
 }
 body .container .profiles .BE {
   padding-top: 3%;
   padding-bottom: 3%;
-  border-bottom: 1px solid black;
 }
 body .container .profiles .BE .profile img {
-  border: 1px solid transparent;
   max-width: 230px;
   max-height: 200px;
-  width: 30%;
+  width: 20%;
   height: 25%;
 }
 body .container .profiles .BE .profile p {
@@ -609,8 +636,9 @@ body .container .profiles .BE .profile p {
   align-self: center;
   justify-content: center;
 }
-body .container .profiles .BE .profile img {
+body .container .profiles .BE .profile #be {
   float: left;
+  border: 8px solid white;
 }
 body .container .profiles .BE .profile h3 {
   padding-bottom: 3%;
@@ -621,15 +649,20 @@ body .container .profiles .BE .profile h3 {
 }
 body .container .profiles .BE .profile .icons {
   float: right;
-  display: flex;
-  flex-direction: row-reverse;
+  display: block;
   margin-top: 2%;
 }
-body .container .profiles .BE .profile .icons img {
+body .container .profiles .BE .profile .icons .icon {
   width: 12%;
 }
 @media (min-width: 900px) {
   body {
     max-width: 100%;
+  }
+  body .top-content .header nav {
+    width: 40%;
+  }
+  body .top-content .header nav a {
+    font-size: 1.6rem;
   }
 }
