@@ -197,8 +197,13 @@ p {
   font-size: 1.8rem;
   padding-bottom: 10px;
 }
+img {
+  width: inherit;
+  height: inherit;
+}
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 span {
   font-size: 1.6rem;
@@ -332,16 +337,18 @@ body .content .middle-content .quote-area {
   text-align: center;
   font-size: 1.3rem;
 }
-body .content .middle-content button {
-  padding: 1%;
+body .content .middle-content .rm {
   width: 30%;
+  height: 25%;
+}
+body .content .middle-content .rm button {
+  width: 100%;
   background-color: transparent;
   color: rgba(3, 3, 3, 0.6);
-  margin-bottom: 2%;
-  box-shadow: none;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  padding: 4%;
 }
-body .content .middle-content button:hover {
+body .content .middle-content .rm:hover {
   background-color: rgba(3, 3, 3, 0.6);
   color: white;
 }
