@@ -3,15 +3,13 @@
     max-width: 649px;
     background-color: rgb(232, 238, 244);
     display: flex;
-    flex-direction: column;
-         
+    flex-direction: column;         
     background-size: cover;
   .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
     .header{
       background-image: url("../img/refugees.jpeg");
       background-size: cover;
@@ -86,6 +84,7 @@
         justify-content: space-between;
         align-items: center;
         margin-right: 5%;
+        padding: 3% 0;
         .left-button{
           width: 0;
           height: 0;
@@ -97,7 +96,7 @@
           align-self: center;                  
         }
         .left-button:hover{
-          border-right: 25px solid @palletfg;
+          
           opacity: .8;
         }
         .right-button{
@@ -111,7 +110,7 @@
           align-self: center;          
         }
         .right-button:hover{
-          border-left: 25px solid @palletfg;
+          
           opacity: .8;
           
         }
@@ -142,7 +141,7 @@
         }
         
       }
-      .rm:hover{        
+      .rm button:hover{        
         background-color: @palletfg;
         color: white; 
       }   

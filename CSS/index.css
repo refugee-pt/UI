@@ -296,6 +296,7 @@ body .content .middle-content .carousel {
   justify-content: space-between;
   align-items: center;
   margin-right: 5%;
+  padding: 3% 0;
 }
 body .content .middle-content .carousel .left-button {
   width: 0;
@@ -308,7 +309,6 @@ body .content .middle-content .carousel .left-button {
   align-self: center;
 }
 body .content .middle-content .carousel .left-button:hover {
-  border-right: 25px solid rgba(3, 3, 3, 0.6);
   opacity: .8;
 }
 body .content .middle-content .carousel .right-button {
@@ -322,7 +322,6 @@ body .content .middle-content .carousel .right-button {
   align-self: center;
 }
 body .content .middle-content .carousel .right-button:hover {
-  border-left: 25px solid rgba(3, 3, 3, 0.6);
   opacity: .8;
 }
 body .content .middle-content .carousel .carousel-img {
@@ -348,7 +347,7 @@ body .content .middle-content .rm button {
   font-size: 1.4rem;
   padding: 4%;
 }
-body .content .middle-content .rm:hover {
+body .content .middle-content .rm button:hover {
   background-color: rgba(3, 3, 3, 0.6);
   color: white;
 }
@@ -533,28 +532,34 @@ body .container .profiles .PM .profile img {
   width: 20%;
   height: 25%;
 }
-body .container .profiles .PM .profile p {
-  width: 50%;
-  height: 25%;
-}
-body .container .profiles .PM .profile #pm {
+body .container .profiles .PM #pm {
   float: right;
   border: 8px solid white;
 }
-body .container .profiles .PM .profile h3 {
-  padding-bottom: 2%;
+body .container .profiles .PM h3 {
+  padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: underline;
 }
-body .container .profiles .PM .profile .icons {
+body .container .profiles .PM .bio-content .bio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   float: left;
-  display: block;
-  margin-top: 2%;
 }
-body .container .profiles .PM .profile .icons .icon {
-  width: 12%;
+body .container .profiles .PM .bio-content .bio p {
+  width: 100%;
+  float: left;
+}
+body .container .profiles .PM .bio-content .bio .icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .container .profiles .PM .bio-content .bio .icons img {
+  padding: 0 3%;
 }
 body .container .profiles .UI {
   padding-top: 3%;
@@ -567,11 +572,6 @@ body .container .profiles .UI .profile img {
   width: 20%;
   height: 25%;
 }
-body .container .profiles .UI .profile p {
-  width: 50%;
-  height: 25%;
-  float: right;
-}
 body .container .profiles .UI .profile #ui {
   float: left;
   border: 8px solid white;
@@ -583,13 +583,23 @@ body .container .profiles .UI .profile h3 {
   align-items: center;
   text-decoration: underline;
 }
-body .container .profiles .UI .profile .icons {
+body .container .profiles .UI .profile .bio-content .bio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   float: right;
-  display: block;
-  margin-top: 2%;
 }
-body .container .profiles .UI .profile .icons .icon {
-  width: 12%;
+body .container .profiles .UI .profile .bio-content .bio p {
+  width: 100%;
+  float: right;
+}
+body .container .profiles .UI .profile .bio-content .bio .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .container .profiles .UI .profile .bio-content .bio .icons img {
+  padding: 0 3%;
 }
 body .container .profiles .FE {
   padding-top: 3%;
@@ -602,65 +612,73 @@ body .container .profiles .FE .profile img {
   width: 20%;
   height: 25%;
 }
-body .container .profiles .FE .profile p {
-  width: 50%;
-  height: 25%;
-}
-body .container .profiles .FE .profile #fe {
+body .container .profiles .FE #fe {
   float: right;
   border: 8px solid white;
 }
-body .container .profiles .FE .profile h3 {
+body .container .profiles .FE h3 {
   padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: underline;
 }
-body .container .profiles .FE .profile .icons {
+body .container .profiles .FE .bio-content .bio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   float: left;
-  display: block;
-  margin-top: 2%;
 }
-body .container .profiles .FE .profile .icons .icon {
-  width: 12%;
+body .container .profiles .FE .bio-content .bio p {
+  width: 100%;
+  float: left;
 }
-body .container .profiles .BE {
+body .container .profiles .FE .bio-content .bio .icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .container .profiles .FE .bio-content .bio .icons img {
+  padding: 0 3%;
+}
+body .container .BE {
   padding-top: 3%;
   padding-bottom: 3%;
 }
-body .container .profiles .BE .profile img {
+body .container .BE .profile img {
   max-width: 230px;
   max-height: 200px;
   width: 20%;
   height: 25%;
 }
-body .container .profiles .BE .profile p {
-  width: 50%;
-  height: 25%;
-  float: right;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
-body .container .profiles .BE .profile #be {
+body .container .BE .profile #be {
   float: left;
   border: 8px solid white;
 }
-body .container .profiles .BE .profile h3 {
+body .container .BE .profile h3 {
   padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: underline;
 }
-body .container .profiles .BE .profile .icons {
+body .container .BE .profile .bio-content .bio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   float: right;
-  display: block;
-  margin-top: 2%;
 }
-body .container .profiles .BE .profile .icons .icon {
-  width: 12%;
+body .container .BE .profile .bio-content .bio p {
+  width: 100%;
+  float: right;
+}
+body .container .BE .profile .bio-content .bio .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .container .BE .profile .bio-content .bio .icons img {
+  padding: 0 3%;
 }
 @media (min-width: 900px) {
   body {
