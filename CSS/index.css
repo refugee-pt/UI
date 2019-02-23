@@ -535,6 +535,8 @@ body .container .profiles .PM .profile img {
 body .container .profiles .PM #pm {
   float: right;
   border: 8px solid white;
+  height: 30%;
+  width: 20%;
 }
 body .container .profiles .PM h3 {
   padding-bottom: 3%;
